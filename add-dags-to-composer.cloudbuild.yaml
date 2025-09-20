@@ -1,0 +1,11 @@
+#Create Cloud Build YAML configuration for synchronizing DAGs
+steps:
+  # install dependencies
+  - name: python
+    entrypoint: pip
+    args: ["install", "-r", "utils/requirements.txt", "--user"]
+
+  # run
+  - name: python
+    entrypoint: python
+    args: ["utils/add_dags_to_composer.py", "--dags_directory=${_DAGS_DIRECTORY}", "--dags_bucket=${_DAGS_BUCKET}"]
