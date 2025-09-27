@@ -1,0 +1,5 @@
+database,datasource,tablename,loadtype,watermark,is_active,targetpath
+hp-mysql-db,hp-mysql-db,claimmedc,Incremental,ModifiedDate,1,medcial
+hp-mysql-db,hp-mysql-db,claimsrx,Incremental,ModifiedDate,1,pharmacy
+hp-mysql-db,hp-mysql-db,elig,Full,,1,elig
+hp-mysql-db,hp-mysql-db,acctstruct,Full,,1,acct
