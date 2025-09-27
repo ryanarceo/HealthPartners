@@ -1,0 +1,11 @@
+database,datasource,tablename,loadtype,watermark,is_active,targetpath
+hospital-a-mysql-db,hospital_a_db,encounters,Incremental,ModifiedDate,1,hospital-a
+hospital-a-mysql-db,hospital_a_db,patients,Incremental,ModifiedDate,1,hospital-a
+hospital-a-mysql-db,hospital_a_db,transactions,Incremental,ModifiedDate,1,hospital-a
+hospital-a-mysql-db,hospital_a_db,providers,Full,,1,hospital-a
+hospital-a-mysql-db,hospital_a_db,departments,Full,,1,hospital-a
+hospital-b-mysql-db,hospital_b_db,encounters,Incremental,ModifiedDate,1,hospital-b
+hospital-b-mysql-db,hospital_b_db,patients,Incremental,ModifiedDate,1,hospital-b
+hospital-b-mysql-db,hospital_b_db,transactions,Incremental,ModifiedDate,1,hospital-b
+hospital-b-mysql-db,hospital_b_db,providers,Full,,1,hospital-b
+hospital-b-mysql-db,hospital_b_db,departments,Full,,1,hospital-b
