@@ -42,3 +42,5 @@ with DAG(
 
 # Define dependencies
 trigger_pyspark_dag >> trigger_bigquery_dag
+
+#Added Comment to trigger Airflow DAG
