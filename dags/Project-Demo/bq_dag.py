@@ -8,6 +8,8 @@ from airflow.providers.google.cloud.operators.bigquery import BigQueryInsertJobO
 PROJECT_ID = "avd-databricks-demo"
 LOCATION = "US"
 SQL_FILE_PATH_1 = "/home/airflow/gcs/data/BQ/bronze.sql"
+SQL_FILE_PATH_2 = "/home/airflow/gcs/data/BQ/silver.sql"
+SQL_FILE_PATH_3 = "/home/airflow/gcs/data/BQ/gold.sql"
 
 # Read SQL query from file
 def read_sql_file(file_path):
@@ -15,6 +17,8 @@ def read_sql_file(file_path):
         return file.read()
 
 BRONZE_QUERY = read_sql_file(SQL_FILE_PATH_1)
+SILVER_QUERY = read_sql_file(SQL_FILE_PATH_2)
+GOLD_QUERY = read_sql_file(SQL_FILE_PATH_3)
 
 # Define default arguments
 ARGS = {
