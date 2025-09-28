@@ -17,13 +17,13 @@ ARGS = {
     "retry_delay": timedelta(minutes=5)
 }
 
-# Define the parent DAG
+# Define the Run Job DAG
 with DAG(
     dag_id="runjob_dag",
     schedule_interval="0 5 * * *",
     description="Primary Run Job DAG to trigger PySpark and BigQuery DAGs",
     default_args=ARGS,
-    tags=["parent", "orchestration", "etl"]
+    tags=["Run Job", "orchestration", "etl"]
 ) as dag:
 
     # Task to trigger PySpark DAG
