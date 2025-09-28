@@ -19,7 +19,7 @@ ARGS = {
 
 # Define the Run Job DAG
 with DAG(
-    dag_id="runjob_dag",
+    dag_id="healthcarerunjob",
     schedule_interval="0 5 * * *",
     description="Primary Run Job DAG to trigger PySpark and BigQuery DAGs",
     default_args=ARGS,
