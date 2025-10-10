@@ -13,7 +13,7 @@ from airflow.providers.google.cloud.operators.dataproc import (
 PROJECT_ID = "avd-databricks-demo-472818"
 REGION = "us-east1"
 CLUSTER_NAME = "my-demo-cluster2"
-COMPOSER_BUCKET = "us-central1-demo-composer-33062b8d-bucket"
+COMPOSER_BUCKET = " us-central1-demo-composer-d6b99f79-bucket"
 
 GCS_JOB_FILE_1 = f"gs://{COMPOSER_BUCKET}/data/INGESTION/inputdata.py"
 PYSPARK_JOB_1 = {
