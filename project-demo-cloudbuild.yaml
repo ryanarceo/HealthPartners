@@ -18,5 +18,5 @@ options:
 
 substitutions:
   _DAGS_DIRECTORY: "dags/Project-Demo/"
-  _DAGS_BUCKET: "us-central1-demo-composer-33062b8d-bucket" 
+  _DAGS_BUCKET: "us-central1-demo-composer-d6b99f79-bucket" 
   _DATA_DIRECTORY: "data/"
